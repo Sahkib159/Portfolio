@@ -1,5 +1,7 @@
 div {
     text-align: center;
+    height: auto;
+    width: 100%;
 }
 
 h1 {
@@ -25,7 +27,22 @@ p {
 }
 
 li{
+    
+
     border-style: solid;
-    border-width: 2px;
+    border-width: 5px;
     border-color: blue;
+
+    font-family: times new roman;
+    font-size: 10px;
+    line-height: 100%;
+    
+    padding: auto;
+    display: block;
+    
+
+
+
+
 }
+
