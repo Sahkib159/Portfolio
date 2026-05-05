@@ -46,3 +46,8 @@ li{
 
 }
 
+#education{
+    background-color: lightblue;
+    background-image: url(Edu.jpg);
+    background-size: cover;
+}
