@@ -733,3 +733,77 @@ a:focus-visible {
     flex-direction: column;
   }
 }
+
+
+/* 14. Searchable GitHub-linked project showcase */
+.project-toolbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  max-width: 720px;
+  margin: 0 0 24px;
+}
+
+.project-search-label {
+  color: var(--muted);
+  font-family: var(--font-code);
+  font-size: 0.82rem;
+}
+
+.project-search {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.project-search::placeholder {
+  color: #71817b;
+}
+
+.project-search:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-color: var(--accent);
+}
+
+.project-count {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-code);
+  font-size: 0.78rem;
+}
+
+.project-card[hidden] {
+  display: none;
+}
+
+.projects-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.projects-footer .section-description {
+  margin: 0;
+}
+
+@media (max-width: 520px) {
+  .projects-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .projects-footer .button {
+    align-self: flex-start;
+  }
+}
