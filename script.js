@@ -6,7 +6,7 @@ const terminalOutput = document.getElementById("terminal-output");
 const commands = {
   help: () => [
     "Available commands:",
-    "about    - Learn about Sahkib",
+    "about    - Learn about Sahkib Ahad Chowdhury",
     "skills   - View technical skills",
     "projects - Jump to projects",
     "contact  - Get in touch",
@@ -55,7 +55,7 @@ terminalForm.addEventListener("submit", function (event) {
 
   if (!command) return;
 
-  addLine(`visitor@shades:~$ ${command}`);
+  addLine(`visitor@sahkib:~$ ${command}`);
 
   if (command === "clear") {
     terminalOutput.replaceChildren();
