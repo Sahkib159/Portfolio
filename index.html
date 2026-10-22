@@ -1,25 +1,215 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="Stylesheet" href="style.css">
+
+    <meta
+        name="description"
+        content="The personal portfolio of Sahkib Ahad Chowdhury, a CSE student learning software development."
+    >
+
+    <title>Sahkib Ahad Chowdhury | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id = "main">
-    <!--This page is the main branch of my portfolio.-->
-    <h1>Sahkib Ahad Chowdhury </h1>
-    <p>Aspiring Full-Stack Developer | CSE Student</p>
-    <nav>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact Me</a>
-    </nav>
-    </div>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home">
+                shades<span>_</span>
+            </a>
 
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero container" id="home">
+            <p class="terminal-label">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE — WELCOME TO MY PORTFOLIO
+            </p>
+
+            <p class="command">$ whoami</p>
+
+            <h1>
+                Hi, I'm <span class="accent">Sahkib</span>.
+            </h1>
+
+            <h2 class="hero-subtitle">
+                CSE Student <span class="separator">/</span>
+                Aspiring Full-Stack Developer
+            </h2>
+
+            <p class="hero-description">
+                I enjoy learning how software works, solving problems,
+                and building projects one step at a time.
+                Currently strengthening my web development fundamentals.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects">
+                    Explore my work <span aria-hidden="true">→</span>
+                </a>
+
+                <a class="button button-secondary" href="#contact">
+                    Get in touch
+                </a>
+            </div>
+
+            <p class="hero-footer">
+                <span class="accent">const</span> goal =
+                <span class="code-string">"Keep learning. Keep building."</span>;
+            </p>
+        </section>
+
+        <section class="section container" id="about">
+            <p class="section-label">01 / ABOUT</p>
+            <h2 class="section-title">A little about me<span>.</span></h2>
+
+            <div class="section-panel">
+                <p>
+                    I'm a Computer Science and Engineering student at
+                    Independent University, Bangladesh. I'm building my
+                    foundation in programming and web development through
+                    coursework, experiments, and personal projects.
+                </p>
+                <p>
+                    My current focus is frontend development, with the goal
+                    of growing into full-stack software engineering.
+                </p>
+            </div>
+        </section>
+
+        <section class="section container" id="skills">
+            <p class="section-label">02 / SKILLS</p>
+            <h2 class="section-title">Tools I'm learning<span>.</span></h2>
+
+            <div class="skill-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>SQL</span>
+                <span>Git & GitHub</span>
+            </div>
+
+            <p class="muted">
+                This list should reflect what you can actually use.
+                We'll update it as your skills grow.
+            </p>
+        </section>
+
+        <section class="section container" id="projects">
+            <p class="section-label">03 / PROJECTS</p>
+            <h2 class="section-title">Things I've worked on<span>.</span></h2>
+
+            <article class="project-card">
+                <div class="project-topline">
+                    <span class="project-index">PROJECT_001</span>
+                    <span class="project-status">Personal project</span>
+                </div>
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    My personal website, originally built with HTML and CSS.
+                    I'm redesigning it to practise responsive layouts,
+                    clean styling, accessibility, and eventually JavaScript.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a
+                    class="text-link"
+                    href="https://github.com/Sahkib159/Portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View source code ↗
+                </a>
+            </article>
+
+            <p class="muted">
+                We'll add more projects here as you build and finish them.
+            </p>
+        </section>
+
+        <section class="section container" id="experience">
+            <p class="section-label">04 / EXPERIENCE</p>
+            <h2 class="section-title">My journey so far<span>.</span></h2>
+
+            <article class="timeline-item">
+                <p class="timeline-date">OCT 2024 — PRESENT</p>
+                <h3>Part-time System Administrator</h3>
+                <p class="muted">Mashlabz Technologies</p>
+                <p>
+                    Part-time experience alongside my CSE studies.
+                    I'll expand this section with specific responsibilities
+                    and achievements that accurately describe my work.
+                </p>
+            </article>
+
+            <article class="timeline-item">
+                <p class="timeline-date">2023 — PRESENT</p>
+                <h3>BSc in Computer Science & Engineering</h3>
+                <p class="muted">Independent University, Bangladesh</p>
+                <p>
+                    Studying computer science, programming, databases,
+                    and software development.
+                </p>
+            </article>
+        </section>
+
+        <section class="section container" id="contact">
+            <p class="section-label">05 / CONTACT</p>
+            <h2 class="section-title">Let's connect<span>.</span></h2>
+
+            <div class="section-panel">
+                <p>
+                    Have a project idea, an opportunity, or just want to
+                    talk about technology? Feel free to reach out.
+                </p>
+
+                <a
+                    class="button button-primary"
+                    href="mailto:Sahkib159@gmail.com"
+                >
+                    Email me →
+                </a>
+
+                <div class="social-links">
+                    <a
+                        href="https://github.com/Sahkib159"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >GitHub ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <span class="accent">&gt;</span>
+                Built by Sahkib with HTML & CSS.
+            </p>
+            <p>© 2026 Sahkib Ahad Chowdhury</p>
+        </div>
+    </footer>
 </body>
 </html>
