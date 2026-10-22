@@ -73,3 +73,31 @@ terminalForm.addEventListener("submit", function (event) {
   terminalInput.value = "";
   terminalOutput.scrollTop = terminalOutput.scrollHeight;
 });
+
+
+// Project search: filter the featured, source-linked project cards.
+const projectSearch = document.getElementById("project-search");
+const projectGrid = document.getElementById("projects-grid");
+const projectCount = document.getElementById("project-count");
+
+if (projectSearch && projectGrid && projectCount) {
+  const projectCards = Array.from(projectGrid.querySelectorAll(".project-card"));
+
+  function filterProjects() {
+    const query = projectSearch.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    projectCards.forEach((card) => {
+      const matches = card.textContent.toLowerCase().includes(query);
+      card.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    projectCount.textContent = query
+      ? `Showing ${visibleCount} of ${projectCards.length} projects`
+      : `Showing all ${projectCards.length} projects`;
+  }
+
+  projectSearch.addEventListener("input", filterProjects);
+  filterProjects();
+}
