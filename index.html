@@ -10,6 +10,10 @@
     content="Sahkib Ahad Chowdhury is a Computer Science and Engineering student at IUB, building web development skills and practical software projects."
   >
 
+  <meta property="og:title" content="Sahkib Ahad Chowdhury | Software Engineering Portfolio">
+  <meta property="og:description" content="Explore Sahkib's software, web development, compiler, and embedded systems projects.">
+  <meta property="og:type" content="website">
+
   <title>Sahkib Ahad Chowdhury | Software Engineering Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
@@ -220,122 +224,83 @@
         <p class="section-label">// 03. Projects</p>
         <h2 class="section-title">Things I've been building.</h2>
 
-        <div class="projects-grid">
+        <div class="project-toolbar">
+          <label for="project-search" class="project-search-label">Search projects</label>
+          <input
+            id="project-search"
+            class="project-search"
+            type="search"
+            placeholder="Search by name, technology, or keyword..."
+            autocomplete="off"
+          >
+          <p id="project-count" class="project-count" aria-live="polite">Showing 7 projects</p>
+        </div>
 
+        <div class="projects-grid" id="projects-grid">
           <article class="project-card">
             <div class="project-top">
               <span class="project-icon">&lt;/&gt;</span>
               <span class="project-status">Personal project</span>
             </div>
-
             <h3>Developer Portfolio</h3>
-
-            <p>
-              A terminal-inspired personal website to showcase my
-              background, technical skills, experience, and projects.
-              Built as a hands-on exercise in frontend development.
-            </p>
-
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <a
-              class="project-link"
-              href="https://github.com/Sahkib159/Portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View on GitHub <span aria-hidden="true">↗</span>
-            </a>
+            <p>A terminal-inspired personal website showcasing my background, technical skills, experience, and selected projects.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/Portfolio" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
           </article>
-
 
           <article class="project-card">
             <div class="project-top">
               <span class="project-icon">FX</span>
               <span class="project-status">University OOP project</span>
             </div>
-
             <h3>Real Estate Management System</h3>
-
-            <p>
-              A team-based JavaFX application. I led the team and worked on
-              authentication, role-based dashboards, user management, activity
-              logging, backups, and integrating application modules.
-            </p>
-
-            <div class="project-tags">
-              <span>Java</span>
-              <span>JavaFX</span>
-              <span>OOP</span>
-              <span>MVC</span>
-            </div>
+            <p>A team-based JavaFX application for property listings, role-based dashboards, search and filtering, simulated transactions, and file-based persistence.</p>
+            <div class="project-tags"><span>Java</span><span>JavaFX</span><span>OOP</span><span>Maven</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/oop-project-group18-Real-Estate" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-card">
             <div class="project-top">
-              <span class="project-icon">IoT</span>
+              <span class="project-icon">SMS</span>
               <span class="project-status">Academic project</span>
             </div>
-
-            <h3>IoT-Integrated Disease Prediction System</h3>
-
-            <p>
-              A healthcare-monitoring prototype using physiological sensors
-              and ESP8266 connectivity to send readings to the cloud and
-              visualize data through ThingSpeak, with alert logic for abnormal readings.
-            </p>
-
-            <div class="project-tags">
-              <span>IoT</span>
-              <span>ESP8266</span>
-              <span>Arduino IDE</span>
-              <span>ThingSpeak</span>
-            </div>
+            <h3>School Management System</h3>
+            <p>A web application for student records and school fee settings, with account access, CRUD operations, and database-backed fee configuration.</p>
+            <div class="project-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/school_management_system" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-card">
             <div class="project-top">
-              <span class="project-icon">HW</span>
-              <span class="project-status">Electronics project</span>
+              <span class="project-icon">AST</span>
+              <span class="project-status">Compiler construction</span>
             </div>
-
-            <h3>Portable Stereo Audio Amplifier</h3>
-
-            <p>
-              Designed and tested a portable stereo audio amplifier using the
-              LA4508 dual-channel amplifier IC, including component selection,
-              breadboard implementation, and performance testing.
-            </p>
-
-            <div class="project-tags">
-              <span>Electronics</span>
-              <span>LA4508</span>
-              <span>Hardware testing</span>
-            </div>
+            <h3>Smart Syntax Error Corrector</h3>
+            <p>A TinyLang parser project that uses lexical analysis, recursive-descent parsing, and parser-derived expected tokens to provide contextual syntax-error repair guidance.</p>
+            <div class="project-tags"><span>Python</span><span>Parsing</span><span>Compiler concepts</span><span>Gemini API</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/Smart-Parser-Project" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-card">
             <div class="project-top">
-              <span class="project-icon">LFR</span>
-              <span class="project-status">Digital Logic lab project</span>
+              <span class="project-icon">PICO</span>
+              <span class="project-status">Embedded / hardware</span>
             </div>
+            <h3>The Cyber Terminal</h3>
+            <p>A Raspberry Pi Pico and OLED-based digital art project with a MicroPython animation engine featuring procedural graphics, geometric motion, and terminal-inspired visuals.</p>
+            <div class="project-tags"><span>MicroPython</span><span>Raspberry Pi Pico</span><span>OLED</span><span>Embedded systems</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/The-Cyber-Terminal" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </article>
 
-            <h3>Arduino Line Follower Robot</h3>
-
-            <p>
-              Built a robot that follows a predefined line using an infrared
-              sensor array, Arduino Nano, and an L298N motor driver.
-            </p>
-
-            <div class="project-tags">
-              <span>Arduino Nano</span>
-              <span>IR sensors</span>
-              <span>L298N</span>
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-icon">WEB</span>
+              <span class="project-status">Frontend practice</span>
             </div>
+            <h3>Amazon Clone Website</h3>
+            <p>A frontend practice project inspired by an online shopping storefront. Visit the repository to review the current implementation and source files.</p>
+            <div class="project-tags"><span>Web development</span><span>Frontend</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/Amazon-Clone-Website" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-card">
@@ -343,34 +308,16 @@
               <span class="project-icon">CF</span>
               <span class="project-status">Course project · In development</span>
             </div>
-
             <h3>CampusFix</h3>
-
-            <p>
-              A campus service-request management system being developed for
-              a university course, planned with a React and TypeScript frontend,
-              a FastAPI backend, and role-based access.
-            </p>
-
-            <div class="project-tags">
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>FastAPI</span>
-              <span>REST API</span>
-            </div>
-
-            <a
-              class="project-link"
-              href="https://github.com/Sahkib159/2310626-CampusFix"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View project repository <span aria-hidden="true">↗</span>
-            </a>
+            <p>Documentation and planning for a campus service-request management system using a planned React and TypeScript frontend, FastAPI backend, REST APIs, and role-based access.</p>
+            <div class="project-tags"><span>React</span><span>TypeScript</span><span>FastAPI</span><span>REST API</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/2310626-CampusFix" target="_blank" rel="noopener noreferrer">View project repository <span aria-hidden="true">↗</span></a>
           </article>
+        </div>
 
-          <!-- Add more project cards as you build projects. -->
-
+        <div class="projects-footer">
+          <p class="section-description">Want to explore more? Browse my public repositories on GitHub.</p>
+          <a class="button button-secondary" href="https://github.com/Sahkib159?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all repositories <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
