@@ -131,19 +131,32 @@
         <p class="section-label">// 01. About me</p>
         <h2 class="section-title">A little about myself.</h2>
 
-        <div class="about-content">
-          <p>
-            I'm pursuing a BSc in Computer Science and Engineering at
-            Independent University, Bangladesh (IUB). I enjoy exploring
-            how software works and turning ideas into practical projects.
-          </p>
+        <div class="about-layout">
+          <figure class="about-portrait">
+            <img
+              src="IMG_20250716_152341_239.jpg"
+              alt="Portrait of Sahkib Ahad Chowdhury"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption><span aria-hidden="true">●</span> Building, learning, improving.</figcaption>
+          </figure>
 
-          <p>
-            My current focus is strengthening my programming fundamentals
-            and learning full-stack web development. I believe consistent
-            practice, curiosity, and building real projects are essential
-            to becoming a better developer.
-          </p>
+          <div class="about-content">
+            <p>
+              I'm pursuing a BSc in Computer Science and Engineering at
+              Independent University, Bangladesh (IUB). I enjoy exploring
+              how software works and turning ideas into practical projects.
+            </p>
+
+            <p>
+              My current focus is strengthening my programming fundamentals
+              and learning full-stack web development. I also enjoy embedded
+              systems and experimenting with hardware. I believe consistent
+              practice, curiosity, and building real projects are essential
+              to becoming a better developer.
+            </p>
+          </div>
         </div>
 
       </div>
@@ -233,7 +246,7 @@
             placeholder="Search by name, technology, or keyword..."
             autocomplete="off"
           >
-          <p id="project-count" class="project-count" aria-live="polite">Showing 7 projects</p>
+          <p id="project-count" class="project-count" aria-live="polite">Showing all projects</p>
         </div>
 
         <div class="projects-grid" id="projects-grid">
@@ -301,6 +314,31 @@
             <p>A frontend practice project inspired by an online shopping storefront. Visit the repository to review the current implementation and source files.</p>
             <div class="project-tags"><span>Web development</span><span>Frontend</span></div>
             <a class="project-link" href="https://github.com/Sahkib159/Amazon-Clone-Website" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-icon">BRK</span>
+              <span class="project-status">Playable web game</span>
+            </div>
+            <h3>Breakout Game</h3>
+            <p>A classic arcade game built with Python and Pygame, compiled to WebAssembly so it can run in a browser. Includes scoring, lives, progressive levels, and keyboard or touch controls.</p>
+            <div class="project-tags"><span>Python</span><span>Pygame</span><span>WebAssembly</span><span>Vercel</span></div>
+            <div class="project-actions">
+              <a class="project-link" href="https://breakout-game-web.vercel.app/" target="_blank" rel="noopener noreferrer">Play live <span aria-hidden="true">↗</span></a>
+              <a class="project-link" href="https://github.com/Sahkib159/breakout-game" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-icon">SYS</span>
+              <span class="project-status">Monitoring tool</span>
+            </div>
+            <h3>Server Health Dashboard</h3>
+            <p>A lightweight monitoring system that collects CPU, memory, and disk metrics, visualizes usage history, raises threshold alerts, and detects offline machines.</p>
+            <div class="project-tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Chart.js</span></div>
+            <a class="project-link" href="https://github.com/Sahkib159/server-health-dashboard" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-card">

@@ -735,6 +735,70 @@ a:focus-visible {
 }
 
 
+/* About section: portrait + readable copy */
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.8fr);
+  align-items: stretch;
+  gap: 22px;
+}
+
+.about-portrait {
+  align-self: start;
+  margin: 0;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid #286342;
+  border-radius: 12px;
+  box-shadow: 0 0 26px rgb(74 222 128 / 8%);
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 1px solid rgb(74 222 128 / 35%);
+  border-radius: 7px;
+  background: #080c0b;
+}
+
+.about-portrait figcaption {
+  padding-top: 11px;
+  color: var(--muted);
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.about-portrait figcaption span {
+  color: var(--accent);
+  margin-right: 5px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-portrait {
+    width: min(100%, 290px);
+    justify-self: center;
+  }
+
+  .about-portrait img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
 /* 14. Searchable GitHub-linked project showcase */
 .project-toolbar {
   display: grid;
