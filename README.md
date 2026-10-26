@@ -8,6 +8,6 @@ I'm continuously learning, building practical projects, and improving my skills 
 
 **Live Portfolio:** https://portfolio-shades6.vercel.app/
 
-**Tech Stack:** HTML, CSS, JavaScript
+**Tech Stack:** HTML, CSS, JavaScript 
 
 **Focus Areas:** Web Development · Software Engineering · Problem Solving
